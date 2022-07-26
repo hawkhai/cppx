@@ -1,22 +1,28 @@
-﻿// cfcore.cpp : 定义 DLL 的导出函数。
-//
-
-#include "pch.h"
+﻿#include "pch.h"
 #include "framework.h"
 #include "cfcore.h"
 
+#ifdef _DEBUG
+#pragma comment(lib, "..\\debug\\cfcoreAdapterd.lib")
+#else
+#pragma comment(lib, "..\\release\\cfcoreAdapter.lib")
+#endif
 
-// 这是导出变量的一个示例
-CFCORE_API int ncfcore=0;
-
-// 这是导出函数的一个示例。
-CFCORE_API int fncfcore(void)
-{
-    return 0;
+QCoreApplication::QCoreApplication(int& a, char** b, int c) {
+    cfp = new CfCoreApplication(a, b, c);
 }
 
-// 这是已导出类的构造函数。
-Ccfcore::Ccfcore()
-{
-    return;
+int QCoreApplication::exec(void) {
+    return CfCoreApplication::exec();
+}
+
+QCoreApplication::~QCoreApplication(void) {
+    if (cfp) {
+        delete cfp;
+        cfp = nullptr;
+    }
+}
+
+void* QCoreApplication::qt_metacast(char const*) {
+    return nullptr;
 }

@@ -22,12 +22,11 @@
     <ClInclude Include="cfcoreadapter_global.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <QtMoc Include="cfcoreAdapter.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
     <ClCompile Include="cfcoreAdapter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-
+    <ClInclude Include="cfcoreAdapter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

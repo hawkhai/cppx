@@ -2,8 +2,12 @@
 
 #include "cfcoreadapter_global.h"
 
-class CFCOREADAPTER_EXPORT cfcoreAdapter
-{
+class CFCOREADAPTER_EXPORT CfCoreApplication {
 public:
-    cfcoreAdapter();
+    CfCoreApplication(int&, char**, int);
+    static int __cdecl exec(void);
+    ~CfCoreApplication(void);
+
+private:
+    class CfCoreApplicationImpl* cfp = nullptr;
 };

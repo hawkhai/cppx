@@ -4,8 +4,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QtConsoleApplication", "QtConsoleApplication\QtConsoleApplication.vcxproj", "{DAE08BF7-2587-41AC-A2B4-7BA2DC3A50BA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8EB7FFF2-A180-4F9F-B4CB-9B6DB4B95DB6} = {8EB7FFF2-A180-4F9F-B4CB-9B6DB4B95DB6}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cfcore", "cfcore\cfcore.vcxproj", "{8EB7FFF2-A180-4F9F-B4CB-9B6DB4B95DB6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B9217222-7F02-49DF-B55B-4AD07EAF9524} = {B9217222-7F02-49DF-B55B-4AD07EAF9524}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cfcoreAdapter", "cfcoreAdapter\cfcoreAdapter.vcxproj", "{B9217222-7F02-49DF-B55B-4AD07EAF9524}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +37,12 @@ Global
 		{8EB7FFF2-A180-4F9F-B4CB-9B6DB4B95DB6}.Release|x64.Build.0 = Release|x64
 		{8EB7FFF2-A180-4F9F-B4CB-9B6DB4B95DB6}.Release|x86.ActiveCfg = Release|Win32
 		{8EB7FFF2-A180-4F9F-B4CB-9B6DB4B95DB6}.Release|x86.Build.0 = Release|Win32
+		{B9217222-7F02-49DF-B55B-4AD07EAF9524}.Debug|x64.ActiveCfg = Debug|Win32
+		{B9217222-7F02-49DF-B55B-4AD07EAF9524}.Debug|x86.ActiveCfg = Debug|Win32
+		{B9217222-7F02-49DF-B55B-4AD07EAF9524}.Debug|x86.Build.0 = Debug|Win32
+		{B9217222-7F02-49DF-B55B-4AD07EAF9524}.Release|x64.ActiveCfg = Release|Win32
+		{B9217222-7F02-49DF-B55B-4AD07EAF9524}.Release|x86.ActiveCfg = Release|Win32
+		{B9217222-7F02-49DF-B55B-4AD07EAF9524}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
