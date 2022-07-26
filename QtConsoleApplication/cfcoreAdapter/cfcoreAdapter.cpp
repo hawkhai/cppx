@@ -10,7 +10,7 @@ BOOL APIENTRY DllMain(HMODULE hModule,
     switch (ul_reason_for_call)
     {
     case DLL_PROCESS_ATTACH:
-        LoadLibrary(L"E:\\kpdf\\qt\\5.15.0_windows_x86\\bin\\Qt5Cored.dll");
+        //LoadLibrary(L"E:\\kpdf\\qt\\5.15.0_windows_x86\\bin\\Qt5Cored.dll");
     case DLL_THREAD_ATTACH:
     case DLL_THREAD_DETACH:
     case DLL_PROCESS_DETACH:
